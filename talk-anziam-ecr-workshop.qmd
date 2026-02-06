@@ -1,0 +1,238 @@
+---
+title: "Talking by listening: networking at conferences"
+author: "Michael Lydeamore"
+date: ""
+editor:
+  render-on-save: true
+toc: true
+format:
+  presentation-revealjs+letterbox: default
+---
+
+```{css}
+#| echo: false
+
+/* Question Callout */
+.callout-question {
+    background-color: #eef6ff;
+    border-left: 8px solid #2a7ae2;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    text-align: left;
+    color: #1a3a5f;
+}
+
+.callout-question::before {
+    content: "Question";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: #2a7ae2;
+}
+
+/* Answer Callout */
+.callout-answer {
+    background-color: #f0fff4;
+    border-left: 8px solid #27ae60;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    text-align: left;
+    color: #1c4d2f;
+}
+
+.callout-answer::before {
+    content: "Answer";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: #27ae60;
+}
+```
+
+```{r}
+#| label: load-packages
+library(knitr)
+library(ggplot2)
+library(dplyr)
+library(countdown)
+```
+
+## About me
+
+::: {.incremental}
+
+* Senior Lecturer, Department of Econometrics and Business Statistics, Monash University
+* Research in infectious diseases modelling, statistics, and statistical software
+* Self-appointed Chief Vibes Officer of my department
+* Was born deaf, had hearing restored at 7 months old
+* Haven't stopped talking since
+
+:::
+
+## FAQs
+
+::: {.callout-question .fragment}
+Why are you in a business school?
+:::
+
+::: {.callout-answer .fragment}
+We are the largest group of applied statisticians at Monash! [And also the Business School has lots of money so they look after me well]{.fragment}
+:::
+
+## FAQs
+
+::: {.callout-question .fragment}
+Wow disease modelling - must've been a busy 2020 and 2021
+:::
+
+::: {.callout-answer .fragment}
+Yes, although it benefitted me in the long term. But I think I'm still recovering
+:::
+
+## FAQs
+
+::: {.callout-question .fragment}
+What is a Chief Vibes Officer?
+:::
+
+## ANZIAM and AustMS
+
+::: {.incremental}
+
+* Australia is a big country, but has a fairly small research population
+* Many people here have been coming for a long time
+* A lot of us know each other reasonably well
+
+:::
+
+::: {.fragment}
+You may feel like everyone knows someone or everyone.
+
+99.9% are open to knowing more people!
+
+:::
+
+## Networking at a conference
+
+## The elevator pitch
+
+Personally, I find a plan of how to start a conversation means one less stress point
+
+::: {.fragment}
+
+We will develop an "Elevator Pitch" of you and your research!
+
+:::
+
+## The elevator pitch
+
+::::: {.fragment style="border: 1px solid black"}
+
+#### Activity {style="color: firebrick; text-align: center; background: #FDEDEC"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+:::: {.fragment} 
+Create your elevator pitch.
+
+* Your name & institution
+* Current position
+* _Very_ brief research topic
+* Something about the topic
+
+{{< countdown "5:00" >}}
+
+::::
+:::
+
+::: {.column width="50%"}
+:::: {.fragment}
+
+Second 5 minutes: 
+
+Practice it with the person next to you
+
+::::
+
+:::
+
+::::
+
+:::::
+
+## Networking at a conference
+
+Some tips to help make a conference less intimidating:
+
+::: {.incremental}
+
+* Make a buddy [I can be your buddy]{.fragment style="font-size: small"}
+* Maximise the meal breaks
+* Use your elevator pitch
+* Ask questions
+
+:::
+
+## Asking questions
+
+Most people love talking about themselves.
+
+We can practice asking questions!
+
+{{< countdown "15:00" >}}
+
+## Finding a buddy
+
+People bond through shared experiences^[Marsh et. al, _Social Connection Through Joint Action and Interpersonal Coordination_ Topics in Cognitive Science (2009)]
+
+::: {.fragment style="border: 1px solid black"}
+
+#### Activity {style="color: firebrick; text-align: center; background: #FDEDEC"}
+
+::: {style="padding: 10px"}
+
+In pairs, you will talk to each other **for 2 minutes**
+
+Try to learn:
+
+* Name
+* Research topic
+* A common thing, [i.e. hobby, food]{.fragment}[, hatred of University admin]{.fragment}
+
+{{< countdown "2:00" >}}
+
+:::
+
+:::
+
+## Wrap-up
+
+Takeaways:
+
+::: {.incremental}
+
+* We don't all know everyone, but it is good to know someone
+* Have your elevator pitch ready
+* Tag along with a buddy
+* Ask open-ended questions, let them do the talking
+
+:::
+
+::: {.fragment style="border: 1px solid black"}
+
+#### Challenge {style="color: firebrick; text-align: center; background: #FDEDEC"}
+
+::: {style="padding: 10px"}
+At dinner tonight, sit next to someone new.
+
+You can put your buddy(ies) one seat away, or diagonally across.
+:::
+
+:::

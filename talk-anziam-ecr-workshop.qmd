@@ -117,7 +117,7 @@ You may feel like everyone knows someone or everyone.
 
 :::
 
-## Networking at a conference
+## A bit about us
 
 ## The elevator pitch
 
@@ -135,6 +135,8 @@ We will develop an "Elevator Pitch" of you and your research!
 
 #### Activity {style="color: firebrick; text-align: center; background: #FDEDEC"}
 
+
+::: {style="padding: 10px"}
 :::: {.columns}
 
 ::: {.column width="50%"}
@@ -166,6 +168,8 @@ Practice it with the person next to you
 
 :::::
 
+:::
+
 ## Networking at a conference
 
 Some tips to help make a conference less intimidating:
@@ -185,7 +189,7 @@ Most people love talking about themselves.
 
 We can practice asking questions!
 
-{{< countdown "15:00" >}}
+{{< countdown "5:00" >}}
 
 ## Finding a buddy
 

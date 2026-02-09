@@ -1,0 +1,188 @@
+---
+title: "Gamifying data visualisation"
+subtitle: "Teaching `ggplot2` through competitive code golf"
+author: "Michael Lydeamore"
+date: ""
+editor:
+  render-on-save: true
+toc: false
+format:
+  presentation-revealjs+letterbox: default
+---
+
+```{css}
+#| echo: false
+
+/* Question Callout */
+.callout-question {
+    background-color: #eef6ff;
+    border-left: 8px solid #2a7ae2;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    text-align: left;
+    color: #1a3a5f;
+}
+
+.callout-question::before {
+    content: "Question";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: #2a7ae2;
+}
+
+/* Answer Callout */
+.callout-answer {
+    background-color: #f0fff4;
+    border-left: 8px solid #27ae60;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+    text-align: left;
+    color: #1c4d2f;
+}
+
+.callout-answer::before {
+    content: "Answer";
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    margin-bottom: 5px;
+    color: #27ae60;
+}
+```
+
+```{r}
+#| label: load-packages
+library(knitr)
+library(ggplot2)
+library(dplyr)
+```
+
+## Teaching coding in modern statistics
+
+The Business Analytics program at Monash University is _data first_
+
+::: {.fragment}
+Students learn coding from week 1 of their degree, and are working with data from week 2
+:::
+
+::: {.fragment}
+This means that students see code as _part of their understanding_, rather than as a result of their understanding
+:::
+
+## A typical introductory tutorial
+
+![](images/2026-02-10-08-43-56.png){fig-align="center"}
+
+## A typical introductory tutorial
+
+![](images/2026-02-10-08-44-14.png){fig-align="center"}
+
+## How I learnt to code
+
+![](images/2026-02-09-10-13-06.png){fig-align="center"}
+
+::: {.callout-tip}
+We're up to Java 25 now... [👴]{.fragment}
+:::
+
+## Competition in the classroom
+
+There is plenty of research that suggest competition amongst students enhances learning outcomes:
+
+* Chen, Law & Chen _The effects of peer competition-based science learning game on secondary students’ performance, achievement goals, and perceived ability_ Interactive Learning Environments (2018)
+
+* Cagiltay et. al _The effect of competition on learning in games_ Computers & Education (2015)
+
+::: {.fragment}
+Anecdotally, we have run prediction competitions as assignments, and students are enormously engaged, start early, and regularly seek feedback
+:::
+
+## Code Golf
+
+> Code golf is a type of recreational computer programming in which participants aim to solve a problem [accurately] using the least number of characters in their source code.
+
+## Code Golf
+
+In the depths of YouTube, Code Golf is a popular format for teaching programming concepts.
+
+One of the most popular sites is [CSSBattles](https://cssbattle.dev/), where players compete to write the shortest CSS code to match a target design.
+
+::: {.fragment}
+![](images/2026-02-09-22-53-58.png){fig-align="center"}
+:::
+
+# ![](logo.png){fig-align="center" style="padding: 200px 0 0 0"} {style="text-align: center;" background-color="#091827"}
+
+[ggplotbattles.dev](https://ggplotbattles.dev/){style="color: white"}
+
+## `ggplot` battles
+
+::: {.incremental}
+* Built using `webR` and javascript
+* No local R installation required
+* Measures pixel-by-pixel correspondence
+  * **not** code equality!
+:::
+
+
+
+
+## The system
+
+::: {.incremental}
+* Battles are self-contained R files
+* Uses a quarto-like syntax for defining parameters and relevant text
+* Open-source, more battles = more good
+:::
+
+::: {.fragment}
+
+```
+#| title: "Penguin Distributions"
+#| dataset-name: "palmerpenguins::penguins"
+#| colours: "`c('darkorange','purple','cyan4')`"
+#| description: "The `palmerpenguins` dataset is one of the most famous in modern R programming. Data were collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the [Palmer Station, Antarctica LTER](https://pallter.marine.rutgers.edu/), a member of the [Long Term Ecological Research Network](https://lternet.edu/). The original data is available [here](https://allisonhorst.github.io/palmerpenguins/)."
+```
+:::
+
+## Evaluating effect
+
+Approved for a real-world education experiment in ETC1010/5510: Introduction to data analysis
+
+::: {.incremental}
+* Approximately 400 students
+* Split class into two groups: one group uses `ggplot` battles, the other does not
+* Run pre- and post- quizzes which evaluate their learning of `ggplot2` concepts
+* Measure difference in score using a mixed-effects model, with a participant-level random effect
+:::
+
+## Quizzes
+
+Monash uses Moodle as it's eLMS. Quizzes are designed using the `moodlequiz` RMarkdown package, which makes generating quizzes from R code fairly seamless.
+
+## Quizzes
+
+![](images/2026-02-09-10-29-41.png){fig-align="center"}
+
+
+## Upcoming features
+
+* IDE to look more IDE-like (variable windows, multiple files etc)
+* User-account system for scoring and tracking
+* Revamped battle categorisation since the number of battles has grown
+
+## How can you help?
+
+If you would like to use [ggplotbattles.dev](https://www.ggplotbattles.dev) in your own teaching, please do, and **please tell me about it**.
+
+If you have an idea for a battle, please submit it to the [GitHub repo](https://github.com/MikeLydeamore/ggplot2-battles)
+
+# ![](logo.png){fig-align="center" style="padding: 200px 0 0 0"} {style="text-align: center;" background-color="#091827"}
+
+[ggplotbattles.dev](https://ggplotbattles.dev/){style="color: white"}
